@@ -1,0 +1,80 @@
+:root {
+    --brand:        #101b93;
+    --brand-dark:   #00084f;
+    --brand-soft:   #eef8ea;
+    --surface:      #ffffff;
+    --surface-muted:#f7faf6;
+    --text-main:    #252631;
+    --text-soft:    #6b767a;
+    --border-soft:  rgba(59, 52, 155, 0.12);
+    --shadow-soft:  0 14px 34px rgba(26, 57, 24, 0.08);
+}
+ 
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(8, 2, 73, 0.16), transparent 26%),
+        linear-gradient(180deg, #f6f7fc 0%, #ebeef7 100%);
+    color: var(--text-main);
+}
+ 
+.navbar      { box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.page-shell  { padding: 2.5rem 0 3rem; }
+ 
+.page-hero {
+    background: linear-gradient(135deg,
+        rgba(63,155,52,0.14), rgba(52, 54, 155, 0.04));
+    border: 1px solid var(--border-soft);
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-soft);
+    padding: 2rem;
+    margin-bottom: 1.75rem;
+}
+ 
+.module-card, .summary-card {
+    border: 1px solid var(--border-soft);
+    border-radius: 1.25rem;
+    background: var(--surface);
+    box-shadow: var(--shadow-soft);
+}
+ 
+.module-card .card-header,
+.summary-card .card-header {
+    background: transparent;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 1.15rem 1.25rem 0.75rem;
+}
+ 
+.summary-card .metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--brand-dark);
+    line-height: 1;
+}
+ 
+.btn             { border-radius: 0.85rem; font-weight: 600; }
+.btn-success     { background-color: var(--brand); border-color: var(--brand); }
+.btn-success:hover { background-color: var(--brand-dark); }
+ 
+.form-control, .form-select {
+    border-radius: 0.85rem;
+    border: 1px solid rgba(37, 38, 49, 0.12);
+    padding: 0.8rem 0.95rem;
+}
+ 
+.empty-state {
+    border: 1px dashed rgba(26, 114, 186, 0.28);
+    border-radius: 1rem;
+    background: var(--surface-muted);
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-soft);
+}
+ 
+footer { background-color: var(--brand); }
+ 
+@media (max-width: 768px) {
+    .page-shell { padding-top: 1.5rem; }
+    .page-hero  { padding: 1.5rem; }
+}
