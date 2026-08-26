@@ -9,12 +9,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <meta charset="UTF-8">
     <title>Sistema de Matrículas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/matriculas/assets/css/styles.css" rel="stylesheet">
+    <link href="/matriculas/assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#5BE538;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#101b93;">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="/matriculas/index.php">Matrículas</a>
+            <a class="navbar-brand fw-bold" href="/matriculas/index.php">ApplyGo</a>
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
